@@ -34,3 +34,24 @@ document.addEventListener('DOMContentLoaded', function() {
         setLinkDeco("contact-link-deco", 1);
     }
 });
+
+function showSidebar() {
+    const sidebar = document.querySelector('.right-nav-side');
+    var computedStyle = window.getComputedStyle(sidebar);
+    var displayValue = computedStyle.getPropertyValue('display');
+
+    const header = document.querySelector('header');
+    // const target = document.querySelector('.blur-target');
+    // target.style.filter = 'blur(5px)';
+    // Compare the display value with a specific value
+    if (displayValue === 'none') {
+        header.style.position = "fixed"
+        header.style.right = "0"
+        header.style.left = "0"
+        sidebar.style.display = 'flex';
+
+    } else {
+        sidebar.style.display = 'none';
+        header.style.position = "relative"
+    }
+}
