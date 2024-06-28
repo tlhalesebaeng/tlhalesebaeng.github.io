@@ -37,6 +37,10 @@ header {
     border-radius: 20px;
 }
 
+.hamburger-menu{
+    display: none;
+}
+
 .right-nav {
     display: flex;
     align-items: center;
