@@ -14,16 +14,15 @@
     height: 240px;
 }
 
-.intro-name {
-    color: white;
-    vertical-align: top;
-    font-size: 45px;
-}
-
 .intro-school {
     color: white;
     font-size: 20px;
     margin-top: 20px;
+}
+
+.intro-school-degree {
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .intro-email {
@@ -33,7 +32,6 @@
 }
 
 .intro-about {
-    width: 750px;
     margin-top: 15px;
     color: white;
     font-size: 17px;
@@ -46,6 +44,8 @@
     color: rgb(39, 50, 55);
 }
 
+/* skills' styles */
+
 .skills {
     height: auto;
     display: flex;
@@ -57,7 +57,7 @@
 .skills-title {
     margin-top: 50px;
     margin-bottom: 50px;
-    color: rgb(46, 64, 73);
+    color: rgb(86, 119, 135);
     font-size: 25px;
     font-weight: 700;
 }
@@ -69,12 +69,11 @@
 }
 
 .skills-item{
+    position: relative;
     height: 150px;
     width: 100px;
-    color: rgb(46, 64, 73);
     font-weight: 500;
     border-width: 0px;
-    border-color: black;
     border-radius: 6px;
     border-style: solid;
     box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
@@ -84,88 +83,53 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-@media(max-width: 500px){
-    #intro {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 30px;
-        padding-left: 7px;
-    }
+.skill-name {
+    position: relative;
+    color: white;
+}
 
-    #intro-details {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-        margin-top: 30px;
-        align-items: center;
-    }
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(86, 119, 135);
+    border-radius: 6px 6px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .intro-profile{
-        height: 100%;
-        width: 200px;
-    }
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(86, 119, 135);
+}
 
-    .intro-name {
-        font-size: 30px;
-        vertical-align: auto;
-        width: 250px;
-    }
+.overlay::after {
+    border-radius: 0px 10px 0px 0px;
+    background-color: #f9f9f9;
+}
 
-    .intro-school {
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .intro-email {
-        font-size: 16px;
-    }
-
-    .intro-school span {
-        display: block;
-    }
-
-    .intro-about {
-        font-size: 13px;
-        width: 340px;
-    }
-
-    .skills-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 40px;
-    }
-
-    .right-nav {
-        display: none;
-    }
-
-    .right-nav-side{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        top: 53px;
-        right: 0;
-        width: 70%;
-        height: 100vh;
-        background-color: rgb(46, 64, 73);
-    }
-
-    .nav-link {
-        margin-top: 50px;
-    }
-
-    .hamburger-menu{
-        display: block;
-        margin-right: 30px;
-        height: 25px;
-        width: 25px;
-        margin-top: 15px;
-    }
-
+.view-more-link {
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 80px;
+    color: white;
+    background-color: rgb(86, 119, 135);
+    text-decoration: none;
+    padding: 3px 5px;
+    border-radius: 3px;
+    cursor: pointer;
 }

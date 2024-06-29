@@ -1,5 +1,6 @@
+/* main styles */
 footer {
-    height: 100px;
+    height: 120px;
     width: 100%;
     background-color: rgb(46, 64, 73);
     display: flex;
@@ -8,17 +9,54 @@ footer {
     flex-direction: column;
 }
 
-footer p {
+/*footer navigation styles*/
+.footer-nav {
+    width: 105px;
+    display: flex;
+    align-items: center;
+    margin-bottom: -3px;
+}
+
+.svg-background {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.7s;
+}
+
+.svg-inline {
+    height: 16px;
+}
+
+.svg-background:hover {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.svg-background:not(:hover){
+    border-radius: 20px;
+}
+
+.github {
+    margin-bottom: -2px;
+}
+
+/*Copy right styles*/
+
+.footer-copyright-all,  .footer-copyright{
     color: white;
     font-size: 16px;
     line-height: 25px;
 }
 
-footer span {
+.footer-copyright-name {
     font-weight: 700;
 }
 
-footer p svg {
+.footer-copyright svg {
     width: 15px;
     height: 15px;
     margin: 0px 2px -2px 2px;

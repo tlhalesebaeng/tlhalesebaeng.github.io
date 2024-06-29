@@ -1,0 +1,261 @@
+@media(max-width: 500px){
+    #intro {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-left: 7px;
+    }
+
+    #intro-details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .intro-profile{
+        height: 100%;
+        width: 150px;
+    }
+
+    .intro-school {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-email {
+        font-size: 16px;
+    }
+
+    .intro-school-degree {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .intro-school-name {
+        display: block;
+    }
+
+    .intro-about {
+        font-size: 13px;
+        width: 340px;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    .right-nav-side{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 53px;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: rgb(46, 64, 73);
+    }
+
+    .nav-link {
+        margin-top: 50px;
+    }
+
+    .hamburger-menu{
+        display: block;
+        margin-right: 30px;
+        height: 25px;
+        width: 25px;
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width:501px) and (max-width: 700px){ 
+    /*nav styles*/
+    .right-nav {
+        display: none;
+    }
+
+    .right-nav-side{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 53px;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: rgb(46, 64, 73);
+    }
+
+    .nav-link {
+        margin-top: 50px;
+    }
+
+    .hamburger-menu{
+        display: block;
+        margin-right: 30px;
+        height: 25px;
+        width: 25px;
+        margin-top: 15px;
+    }
+
+    /*intro styles */
+    #intro {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-left: 7px;
+    }
+
+    #intro-details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .intro-profile{
+        height: 100%;
+        width: 200px;
+    }
+
+    .intro-school {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-email {
+        font-size: 20px;
+    }
+
+    .intro-school-degree {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .intro-school-name {
+        display: block;
+        font-size: 20px;
+    }
+
+    .intro-about {
+        font-size: 15px;
+        width: 400px;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+    }
+}
+
+@media (min-width:701px) and (max-width: 900px) { 
+    #intro {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-left: 7px;
+    }
+
+    #intro-details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .intro-profile{
+        height: 100%;
+        width: 200px;
+    }
+
+    .intro-school {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-email {
+        font-size: 20px;
+    }
+
+    .intro-school-degree {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .intro-school-name {
+        display: block;
+        font-size: 20px;
+    }
+
+    .intro-about {
+        font-size: 15px;
+        width: 600px;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+    }
+}
+
+@media(min-width: 901px) and (max-width: 1000px) {
+    .intro-about {
+        width: 500px;
+    }
+
+    .intro-school {
+        width: 300px;
+    }
+}
+
+@media(min-width: 1001px) and (max-width: 1100px) {
+    .intro-about {
+        width: 600px;
+    }
+}
+
+@media(min-width: 1101px) and (max-width:1200px) {
+    .intro-about {
+        width: 700px;
+    }
+}
+
+@media(min-width: 1201px) {
+    .intro-about {
+        width: 800px;
+    }
+}
+
