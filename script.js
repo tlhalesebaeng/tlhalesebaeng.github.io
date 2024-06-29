@@ -36,22 +36,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function showSidebar() {
-    const sidebar = document.querySelector('.right-nav-side');
+    const sidebar = document.querySelector(".right-nav-side");
     var computedStyle = window.getComputedStyle(sidebar);
-    var displayValue = computedStyle.getPropertyValue('display');
+    var displayValue = computedStyle.getPropertyValue("display");
 
-    const header = document.querySelector('header');
-    // const target = document.querySelector('.blur-target');
-    // target.style.filter = 'blur(5px)';
-    // Compare the display value with a specific value
-    if (displayValue === 'none') {
+    const header = document.querySelector("header");
+    if (displayValue === "none") {
         header.style.position = "fixed"
         header.style.right = "0"
         header.style.left = "0"
-        sidebar.style.display = 'flex';
+        sidebar.style.display = "flex";
+
+        //Disable scrolling
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
 
     } else {
-        sidebar.style.display = 'none';
+        sidebar.style.display = "none";
         header.style.position = "relative"
+        // Enable scrolling
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
     }
 }
