@@ -19,14 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
         setLinkDeco("cv-link-deco", 0);
         setLinkDeco("contact-link-deco", 0);
 
-    } else if(currentPage === "cv"){
+    } else if(currentPage === "cv" || currentPage === "cv.html"){
         setLinkStyles("cv-link");
         
         setLinkDeco("home-link-deco", 0);
         setLinkDeco("cv-link-deco", 1);
         setLinkDeco("contact-link-deco", 0);
 
-    } else if(currentPage === "contact"){
+    } else if(currentPage === "contact" || currentPage === "contact.html"){
         setLinkStyles("contact-link");
 
         setLinkDeco("home-link-deco", 0);
