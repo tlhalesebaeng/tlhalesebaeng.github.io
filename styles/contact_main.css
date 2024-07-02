@@ -1,0 +1,118 @@
+/*Heading styles*/
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 50px 0px;
+    background-color: rgb(86, 119, 135);
+}
+
+.heading-text {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/*Alternate contact styles*/
+.alt-contact {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 60px 300px;
+    background-color: rgb(247, 248, 250);
+}
+
+.alt-contact-message {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 70px;
+    border-width: 0px;
+    border-radius: 6px;
+    border-style: solid;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.alt-contact-message p {
+    color: rgb(67, 78, 94);
+    text-align: justify;
+}
+
+.alt-contact-email {
+    text-decoration: none;
+    color: rgb(86, 119, 135);
+}
+
+.alt-contact-email:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Contact input styles*/
+.contact-heading {
+    width: 100%;
+    background-color: rgb(247, 248, 250);
+    color: rgb(67, 78, 94);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.contact-input {
+    height: 100%;
+    padding: 0px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(247, 248, 250);
+}
+
+.contact-input-detail {
+    width: 100%;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(185, 193, 205);
+    background-color: white;
+    padding: 20px;
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.contact-name {
+    margin-right: 5px;
+}
+
+.contact-email {
+    margin-left: 5px;
+}
+
+.contact-message {
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bottom-part {
+    flex-direction: column;
+}
+
+.btn-submit {
+    width: 100%;
+    color: white;
+    background-color: rgb(86, 119, 135);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    font-weight: 500;
+}
+
