@@ -1,6 +1,5 @@
 #intro {
     height: auto;
-    background-color: rgb(86, 119, 135);
     padding: 45px 0px 50px 80px;
     display: flex;
     flex-direction: row;
@@ -33,7 +32,6 @@
 
 .intro-about {
     margin-top: 15px;
-    color: white;
     font-size: 17px;
     line-height: 27px;
     text-align: justify;
@@ -41,7 +39,6 @@
 
 .intro-about a {
     text-decoration: none;
-    color: rgb(39, 50, 55);
 }
 
 /* skills' styles */
@@ -57,7 +54,6 @@
 .skills-title {
     margin-top: 50px;
     margin-bottom: 50px;
-    color: rgb(86, 119, 135);
     font-size: 25px;
     font-weight: 700;
 }
@@ -88,7 +84,6 @@
 
 .skill-name {
     position: relative;
-    color: white;
 }
 
 .overlay {
@@ -97,7 +92,6 @@
     top: 0;
     height: 80px;
     width: 100%;
-    background-color: rgb(86, 119, 135);
     border-radius: 6px 6px 0px 10px;
     display: flex;
     align-items: center;
@@ -112,7 +106,7 @@
     bottom: -30px;
     height: 30px;
     width: 30px;
-    background-color: rgb(86, 119, 135);
+    background-color: rgba(53, 53, 53, 0.5);
 }
 
 .overlay::after {
@@ -126,10 +120,14 @@
     font-weight: 500;
     position: relative;
     margin-top: 80px;
-    color: white;
-    background-color: rgb(86, 119, 135);
     text-decoration: none;
     padding: 3px 5px;
     border-radius: 3px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-more-link:hover {
+    transform: translateY(-2px);
+    background-color: rgb(53, 53, 53);
 }

@@ -1,0 +1,263 @@
+.top-part {
+    height: 280px;
+    padding: 48px 150px 0px 150px;
+}
+
+.items-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    font-size: 32px;
+    font-family: Roboto, Arial;
+    font-weight: 700;
+}
+
+.download-pdf {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 6px 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.download-pdf svg {
+    height: 16px;
+    margin-right: 8px;
+}
+
+.download-pdf:hover {
+    background-color: rgb(53, 53, 53);
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+/* Main content of cv styles */
+
+.cv-details {
+    margin: -180px 120px 0px 120px;
+   box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+}
+
+.top-section {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-img {
+    height: 230px;
+}
+
+.personal-details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 30px 0px 30px;
+}
+
+.platforms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.cv-name {
+    font-family: Roboto, Arial;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 4px;
+}
+
+.cv-year {
+    font-family: Roboto, Arial;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.cv-email, .pl {
+    font-size: 16px;
+    font-family: Roboto, Arial;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.cv-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cv-email:hover, .pl:hover {
+    color: white;
+}
+
+.evelope-svg {
+    margin-right: 8px;
+}
+
+.pl {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.pl-svg {
+    height: 16px;
+    color: rgb(67, 78, 94);
+}
+
+.pl-svg-container {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    margin-right: 8px;
+    padding-left: 4px;
+    padding-top: 4px;
+    border: none;
+    border-radius: 2px;
+}
+
+/* CV information styles*/
+
+.cv-body {
+    padding: 48px;
+}
+
+.academic-interest {
+    margin-bottom: 48px;
+}
+
+.cv-heading {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(88, 103, 124);
+    border-bottom-style: solid;
+}
+
+.academic-interest-details {
+    color: rgb(67, 78, 94);
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* CV skills styles */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.column {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Skills style*/
+
+.skills-items {
+    padding-left: 32px;
+    border-left-width: 3px;
+    border-left-color: rgba(53, 53, 53, 0.5);
+    border-left-style: solid;
+    position: relative;
+    margin-bottom: 48px;
+    margin-top: 20px;
+}
+
+.skill-item {
+    padding-bottom: 48px;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-place {
+    color: rgb(88, 103, 124);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.skill-time {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.cv-item-name::before {
+    content: "";
+    box-sizing: border-box;
+    left: -9px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    line-height: 24px;
+    background-color: white;
+    display: block;
+    border-color: rgb(53, 53, 53);
+    border-width: 4px;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+/* Education styles*/
+
+.education {
+    margin-bottom: 48px;
+}
+
+.education-item, .languages-item {
+    margin-bottom: 8px;
+}
+
+/* Languages styles*/
+.lang {
+    font-size: 13px;
+    line-height: 19.5px;
+}
+
+.level {
+    height: 10px;
+    border-radius: 2px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 2px;
+}
+
+.language-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

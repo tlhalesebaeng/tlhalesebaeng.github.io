@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/index_main.css">
+    <link rel="stylesheet" href="styles/cv_main.css">
     <link rel="stylesheet" href="styles/media_queries.css">
   
     <!-- Google Roboto font family -->
@@ -18,8 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   
   </head>
+  <!-- Remove personal details from your cv before uploading this on github -->
   <body>
-    <header class="header">
+    <header class="header primary-bg-color">
       <h2 class="header-name">Tlhalefo Sebaeng</h2>
       <img onclick="showSidebar()" class="hamburger-menu" src="icons/hamburger-menu.png">
       <nav class="right-nav">
@@ -31,7 +32,7 @@
           CV
           <div class="cv-link-deco"></div>
         </a>
-        <a class="nav-link contact-link" href="./cv">
+        <a class="nav-link contact-link" href="./contact">
           CONTACT
           <div class="contact-link-deco"></div>
         </a>
@@ -54,17 +55,236 @@
     </header>
     <!-- Do an animation of your name and your image -->
 
-    <main style="height: 700px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    ">
-      <h2>CV Page</h2>
-      <p>Still to implement</p>
+    <main>
+      <section class="top-part secondary-bg-color">
+        <div class="items-container">
+          <p class="heading white-txt">Curriculum Vitae</p>
+          <a class="download-pdf white-txt" href="./tlhalefo_cv.pdf" download="tlhalefo_cv.pdf">
+            <svg aria-hidden="true" data-prefix="fas" data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg>
+            Download PDF Version
+          </a>
+        </div>
+      </section>
+      <section class="cv-details">
+        <section class="top-section primary-bg-color">
+          <img class="profile-img" src="profile.jpeg">
+          <div class="personal-details-container">
+            <div class="personal-details white-txt">
+              <p class="cv-name">TLHALEFO SEBAENG</p>
+              <p class="cv-year">Student | 2nd Year</p>
+              <a class="cv-email" href="###">
+                <svg class="evelope-svg" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" role="img">
+                  <path fill="#ffffff" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/>
+                </svg>
+                tlhalesebaeng@icloud.com
+              </a>
+            </div>
+            <div class="platforms">
+            <a href="https://www.linkedin.com/in/tlhalefo-sebaeng" target="_blank" class="pl">
+              <span class="pl-svg-container">
+                <svg class="pl-svg" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg>
+              </span>
+              linkedin.com/in/tlhalefo-sebaeng
+            </a>
+            <a href="https://github.com/tlhalesebaeng" target="_blank" class="pl">
+              <span class="pl-svg-container">
+                <svg class="pl-svg" aria-hidden="true" data-prefix="fab" data-icon="github-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512" data-fa-i2svg=""><path fill="currentColor" d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+              </span>
+              github.com/tlhalesebaeng
+            </a>
+            <a href="https://www.instagram.com/t.sebaeng/" target="_blank" class="pl">
+              <span class="pl-svg-container">
+                <svg class="pl-svg" xmlns="http://www.w3.org/2000/svg" fill="rgb(67, 78, 94)" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+              </span>
+              instagram.com/t.sebaeng
+            </a>
+            <a href="https://tlhalesebaeng.github.io/" target="_blank" class="pl">
+              <span class="pl-svg-container">
+                <svg class="pl-svg" aria-hidden="true" data-prefix="fas" data-icon="globe" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"></path></svg>
+              </span>
+              tlhalesebaeng.github.io
+            </a>
+          </div>
+        </div>
+        </section>
+        <section class="cv-body">
+          <section class="academic-interest">
+            <h2 class="cv-heading dark-txt-color">ACADEMIC INTEREST</h2>
+            <p class="academic-interest-details">
+              I am deeply interested in the fields of machine learning and artificial intelligence.
+              I am particularly interested in how AI can revolutionize the computer science industry as a result i will begin learning such.
+              I am eager to understand how reinforcement learning can be applied to solve complex real world problems.
+              I am committed to staying updated with the latest research and developments in this dynamic field. 
+              Overall, my enthusiasm for machine learning and AI drives my continuous learning and exploration in this area.
+            </p>
+          </section>
+          <section class="row">
+            <section class="left-column column">
+              <h2 class="cv-heading">Skills</h2>
+              <h2 class="skill-name dark-txt-color">University of the Witwatersrand</h2>
+              <p class="skill-time light-txt-color">2 years 5 months</p>
+              <div class="skills-items">
+                <div class="skill-item">
+                  <div class="skill-title">
+                    <h3 class="skill-name cv-item-name dark-txt-color">Android Development</h3>
+                  </div>
+                  <p class="skill-time light-txt-color">Feb 2024 - present</p>
+                  <p style="margin-bottom: 16px;"></p>
+                  <p class="skill-details">Took a course about android development with Java and android studio which was a semester course.</p>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-title">
+                    <h3 class="skill-name cv-item-name dark-txt-color">Database Administration</h3>
+                  </div>
+                  <p class="skill-time light-txt-color">Feb 2024 - present</p>
+                  <p style="margin-bottom: 16px;"></p>
+                  <p class="skill-details">Took a course about databases with MySQL and school lamp server which was a semester course.</p>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-title">
+                    <h3 class="skill-name cv-item-name dark-txt-color">API Development</h3>
+                    </div>
+                  <p class="skill-time light-txt-color">Feb 2024 - present</p>
+                  <p style="margin-bottom: 16px;"></p>
+                  <p class="skill-details">The android development course taught me PHP API development and working with JSON data in both frontend and backend.</p>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-title">
+                    <h3 class="skill-name cv-item-name dark-txt-color">Data Structures and Algorithms</h3>
+                   </div>
+                  <p class="skill-time light-txt-color">June 2023 - Nov 2024</p>
+                  <p style="margin-bottom: 16px;"></p>
+                  <p class="skill-details">Took a very difficult course on DSA with C++ which was a semester course.</p>
+                </div>
+              </div>
+              <h2 class="skill-name dark-txt-color">Self Taught</h2>
+              <p class="skill-time light-txt-color">2 years 5 months</p>
+              <div class="skills-items">
+                <div class="skill-item">
+                  <div class="skill-title">
+                    <h3 class="skill-name cv-item-name dark-txt-color">Frontend Web Development</h3>
+                  </div>
+                  <p class="skill-time light-txt-color">Jan 2022 - present</p>
+                  <p style="margin-bottom: 16px;"></p>
+                  <p class="skill-details">Learnt about front web development with HTML, CSS and Javascript online with platforms like YouTube, Sololearn, Udemy, Codecademy, etc...</p>
+                </div>
+              </div>
+              <!-- Projects section -->
+              <h2 class="cv-heading dark-txt-color">Projects</h2>
+              <div class="skills-items">
+                <div class="skill-item">
+                  <div class="skill-title">
+                    <h3 class="skill-name cv-item-name">Portfolio Website</h3>
+                    <p class="skill-place">July 2024</p>
+                  </div>
+                  <p class="skill-time light-txt-color">Tlhalefo Sebaeng</p>
+                  <p style="margin-bottom: 16px;"></p>
+                  <p class="skill-details">I've created this website of my personal portfolio using HTML, CSS and Javascript. This is to showcase my
+                    passion of enhancing my tech related skills and to learn outside academics. The link is available on my Github
+                    account.
+                    </p>
+                </div>
+              </div>
+            </section>
+            <!-- Right side of the page -->
+            <section class="right-column column">
+              <section class="education">
+                <!-- Education section -->
+                <h2 class="cv-heading dark-txt-color">Eduction</h2>
+                <div class="education-item">
+                  <h3 class="skill-name">Grade 12</h3>
+                  <p class="skill-details dark-txt-color">Mandisa Shiceka</p>
+                  <p class="skill-time light-txt-color">2021</p>
+                </div>
+                <div class="education-item">
+                  <h3 class="skill-name">BSc Computer Science</h3>
+                  <p class="skill-details dark-txt-color">University of the Witwatersrand</p>
+                  <p class="skill-time light-txt-color">2023 - Present</p>
+                </div>
+              </section>
+              <section class="other-skills">
+                <!-- Programming languages section -->
+                <h2 class="cv-heading">Programming</h2>
+                <div class="languages-item">
+                  <div class="language-column">
+                    <p class="skill-details lang">Java</p>
+                    <p class="skill-details lang">50%</p>
+                  </div>
+                  <div class="level secondary-bg-color">
+                    <div class="progress primary-bg-color" style="width: 50%;"></div>
+                  </div>
+                </div>
+                <div class="languages-item">
+                  <div class="language-column">
+                    <p class="skill-details lang">C++</p>
+                    <p class="skill-details lang">10%</p>
+                  </div>
+                  <div class="level secondary-bg-color">
+                    <div class="progress primary-bg-color" style="width: 10%;"></div>
+                  </div>
+                </div>
+                <div class="languages-item">
+                  <div class="language-column">
+                    <p class="skill-details lang">Python</p>
+                    <p class="skill-details lang">30%</p>
+                  </div>
+                  <div class="level secondary-bg-color">
+                    <div class="progress primary-bg-color" style="width: 30%;"></div>
+                  </div>
+                </div>
+                <div class="languages-item">
+                  <div class="language-column">
+                    <p class="skill-details lang">PHP</p>
+                    <p class="skill-details lang">70%</p>
+                  </div>
+                  <div class="level secondary-bg-color">
+                    <div class="progress primary-bg-color" style="width: 70%;"></div>
+                  </div>
+                </div>
+                <div class="languages-item">
+                  <div class="language-column">
+                    <p class="skill-details lang">MySQL</p>
+                    <p class="skill-details lang">50%</p>
+                  </div>
+                  <div class="level secondary-bg-color">
+                    <div class="progress primary-bg-color" style="width: 50%;"></div>
+                  </div>
+                </div>
+                <div class="languages-item">
+                  <div class="language-column">
+                    <p class="skill-details lang">HTML</p>
+                    <p class="skill-details lang">80%</p>
+                  </div>
+                  <div class="level secondary-bg-color">
+                    <div class="progress primary-bg-color" style="width: 80%;"></div>
+                  </div>
+                </div>
+                <div class="languages-item">
+                  <div class="language-column">
+                    <p class="skill-details lang">CSS</p>
+                    <p class="skill-details lang">60%</p>
+                  </div>
+                  <div class="level secondary-bg-color">
+                    <div class="progress primary-bg-color" style="width: 60%;"></div>
+                  </div>
+                </div>
+                <div class="languages-item">
+                  <div class="language-column">
+                    <p class="skill-details lang">Javascript</p>
+                    <p class="skill-details lang">30%</p>
+                  </div>
+                  <div class="level secondary-bg-color">
+                    <div class="progress primary-bg-color" style="width: 30%;"></div>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
     </main>
 
-    <footer>
+    <footer class="primary-bg-color">
       <nav class="footer-nav">
         <a class="svg-background" href="https://www.instagram.com/t.sebaeng/" target="_blank">
             <svg class="svg-inline" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>

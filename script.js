@@ -12,7 +12,8 @@ function setLinkStyles(className){
 //run this after DOM content has been loaded
 document.addEventListener('DOMContentLoaded', function() {
     var currentPage = window.location.pathname.split('/').pop(); // Get the current page filename
-    if(currentPage === "index.html" || currentPage === "index"){
+    
+    if(currentPage === "index.html" || currentPage === "index" || currentPage === ""){
         setLinkStyles("home-link");
 
         setLinkDeco("home-link-deco", 1);

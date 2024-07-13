@@ -2,7 +2,7 @@ header {
     display: flex;
     height: 53px;
     justify-content: space-between;
-    background-color: rgb(46, 64, 73);
+    /* background-color: rgb(53, 53, 53); */
 }
 
 .header-name {

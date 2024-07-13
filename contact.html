@@ -19,7 +19,7 @@
   
   </head>
   <body>
-    <header class="header">
+    <header class="header primary-bg-color">
       <h2 class="header-name">Tlhalefo Sebaeng</h2>
       <img onclick="showSidebar()" class="hamburger-menu" src="icons/hamburger-menu.png">
       <nav class="right-nav">
@@ -55,30 +55,33 @@
     <!-- Do an animation of your name and your image -->
 
     <main>
-      <section class="heading">
-        <p class="heading-text">Contact</p>
+      <section class="heading secondary-bg-color">
+        <p class="heading-text white-txt">Contact</p>
       </section>
       <section class="alt-contact">
-        <div class="alt-contact-message">
+        <div class="alt-contact-message dark-txt-color">
           <p>
             You can contact me by filling the form below.
-            Alternatively you can send me an email directly on <a class="alt-contact-email" href="###">tlhalesebaeng@icloud.com</a>
+            Alternatively you can send me an email directly on <a class="alt-contact-email" href="mailto:tlhalesebaeng@icloud.com">tlhalesebaeng@icloud.com</a>
             or visit the platforms at the bottom of the page.
           </p>
         </div>
       </section>
       <p class="contact-heading">Reach out</p>
-      <section class="contact-input">
-        <input class="contact-input-detail contact-name" type="text" placeholder="Name">
-        <input class="contact-input-detail contact-email" type="text" placeholder="Email">
-      </section>
-      <section class="contact-input bottom-part">
-        <textarea class="contact-input-detail contact-message" rows="10" placeholder="Type your message"></textarea>
-        <button class="btn-submit">Submit</button>
-      </section>
+      <form name="submit-to-google-sheet">
+        <section class="contact-input">
+          <input class="contact-input-detail contact-name" name="Name" type="text" placeholder="Name">
+          <input class="contact-input-detail contact-email" name="Email" type="text" placeholder="Email">
+        </section>
+        <section class="contact-input bottom-part">
+          <textarea class="contact-input-detail contact-message" name="Message" rows="10" placeholder="Type your message"></textarea>
+          <button class="btn-submit secondary-bg-color">Submit</button>
+        </section>
+      </form>
+      <span id="sub-message"></span>
     </main>
 
-    <footer>
+    <footer class="primary-bg-color">
       <nav class="footer-nav">
         <a class="svg-background" href="https://www.instagram.com/t.sebaeng/" target="_blank">
             <svg class="svg-inline" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
@@ -101,5 +104,23 @@
       <p class="footer-copyright-all">All rights reserved. <span class="footer-copyright-name">Tlhalefo Sebaeng</span></p>
     </footer>
     <script src="script.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbySDc3ectgpABHgwh4V1Umtmh-fImwnJCXVjq7wvk_SY-MldLx4A6kFVANIM8jwAeym/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const message = document.getElementById("sub-message")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            message.innerHTML = "Message sent"
+            setTimeout(function(){
+              message.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
