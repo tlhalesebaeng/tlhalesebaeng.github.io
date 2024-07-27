@@ -18,6 +18,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   
   </head>
+  <!--  
+  """"""""""""""""""""""""""""""
+    TO-DO:
+      Commit the progress bar changes to github
+  """"""""""""""""""""""""""""""
+  -->
   <body>
     <header class="header primary-bg-color">
       <h2 class="header-name">Tlhalefo Sebaeng</h2>
@@ -75,7 +81,10 @@
         </section>
         <section class="contact-input bottom-part">
           <textarea class="contact-input-detail contact-message" name="Message" rows="10" placeholder="Type your message"></textarea>
-          <button class="btn-submit secondary-bg-color">Submit</button>
+          <button class="btn-submit secondary-bg-color">
+            <div class="progress-bar"></div>
+            <span class="btn-submit-text">Submit</span>
+          </button>
         </section>
       </form>
       <span id="sub-message"></span>
@@ -104,23 +113,5 @@
       <p class="footer-copyright-all">All rights reserved. <span class="footer-copyright-name">Tlhalefo Sebaeng</span></p>
     </footer>
     <script src="script.js"></script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbySDc3ectgpABHgwh4V1Umtmh-fImwnJCXVjq7wvk_SY-MldLx4A6kFVANIM8jwAeym/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const message = document.getElementById("sub-message")
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            message.innerHTML = "Message sent"
-            setTimeout(function(){
-              message.innerHTML = ""
-            }, 5000)
-            form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
   </body>
 </html>

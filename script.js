@@ -60,3 +60,30 @@ function showSidebar() {
         document.documentElement.style.overflow = '';
     }
 }
+
+// Contact form submission 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbySDc3ectgpABHgwh4V1Umtmh-fImwnJCXVjq7wvk_SY-MldLx4A6kFVANIM8jwAeym/exec'
+const form = document.forms['submit-to-google-sheet']
+const message = document.getElementById("sub-message")
+
+form.addEventListener('submit', e => {
+    form.reset();
+    var btnSubmitText = document.getElementsByClassName("btn-submit-text")[0];
+    btnSubmitText.style.display = "none";
+    var progressBar = document.getElementsByClassName("progress-bar")[0];
+    progressBar.style.display = "flex";
+
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            message.innerHTML = "Message sent"
+            progressBar.style.display = "none";
+            btnSubmitText.style.display = "flex";
+
+            setTimeout(function(){
+                message.innerHTML = ""
+            }, 5000)
+        })
+        .catch(error => console.error('Error!', error.message))
+})
+
